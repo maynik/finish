@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hlegal</title>
+    <link rel="stylesheet" href="./css/publication.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header__pc">
+        <div class="header__logo">
+            <img src="./img/Logo-pb.png" alt="Logo">
+        </div>
+        <div class="header__contact">
+            <div class="header__contact__info">
+               <ul>
+                <li>УК</li>
+                <li>РУ</li>
+                <li>EN</li>
+               </ul>
+               <p>Kyiv, Mechnikova str, 14/1</p>
+               <a href="tel:0800211927" class="phone-number">0800 211 927</a>
+               <svg width="24" height="25" >
+                <use href="./css/sprite.svg#fbgrey"></use>
+            </svg>
+            </div> 
+            <div class="header__contact__menu">
+                <nav class="header__contact__menu__main">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="header__contact__menu__burger" id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile">
+        <div class="header__contact__info__mob">
+            <div class="header__contact__info__mob__lang">
+                <ul>
+                    <li>УК</li>
+                    <li>РУ</li>
+                    <li>EN</li>
+                </ul>
+            </div>
+            <div class="header__contact__info__phone-number__mob">
+                <a href="tel:0800211927" class="phone-number">0800 211 927</a>
+            </div>
+        </div>
+        <div class="header__contact__menu__mob">
+            <div class="header__contact__logo__mob">
+                <img src="./img/Logo-pb.png" alt="Logo mob">
+            </div>
+            <div class="header__contact__menu">
+                <nav class="header__contact__menu__main__mob">
+                    <a href="/finish/">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="header__contact__menu__burger__mob" id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>         
+        </div>
+    </div>    
+    </header>
+    <section class="section1">
+        <div class="toggle">
+            <button class="toggle-option active" onclick="toggleOptions('news')">news</button>
+            <button class="toggle-option" onclick="toggleOptions('articles')">articles</button>
+          </div>
+          <div class="publication">
+            <div class="item">
+              <div class="img-item">
+                <img src="./img/Cover.png" alt="Cover">
+              </div>
+              <div class="content-item">
+                <h2>Equity associate</h2>
+                <p class="time">April 22</p>
+                <p>I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+              </div>
+            </div>
+              <div class="item">
+                <div class="img-item">
+                  <img src="./img/Cover2.png" alt="Cover">
+                </div>
+                <div class="content-item">
+                  <h2>Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h2>
+                  <p class="time">September 29</p>
+                  <p>And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                </div>
+              </div>
+                <div class="item">
+                  <div class="img-item">
+                    <img src="./img/Cover3.png" alt="Cover">
+                  </div>
+                  <div class="content-item">
+                    <h2>Millennial Testament</h2>
+                    <p class="time">August 19</p>
+                    <p>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="img-item">
+                      <img src="./img/Cover4.png" alt="Cover">
+                    </div>
+                    <div class="content-item">
+                      <h2>Equity associate</h2>
+                      <p class="time">April 22</p>
+                      <p>I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                    </div>
+                  </div>
+                    <div class="item">
+                      <div class="img-item">
+                        <img src="./img/Cover5.png" alt="Cover">
+                      </div>
+                      <div class="content-item">
+                        <h2>Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h2>
+                        <p class="time">September 29</p>
+                        <p>And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                      </div>
+                    </div>
+                      <div class="item">
+                        <div class="img-item">
+                        </div>
+                        <div class="content-item">
+                          <h2>Millennial Testament</h2>
+                          <p class="time">August 19</p>
+                          <p>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                        </div>
+                      </div>
+        </div>
+        <div class="button-more"><a href="#" class="btn-publ">More publications</a></div>
+    </section>
+    <footer>
+        <div class="container">
+          <div class="inform">
+            <div class="adres">Kyiv, Mechnikova str, 14/1<span class="dot"></span> <a href="#">on map</a></div>
+            <div class="llc">© 2021 HLEGAL Law company, LLC</div>
+          </div>
+          <div class="inform-num">
+            <svg width="38" height="38">
+              <use href="./css/sprite.svg#footerfb"></use>
+          </svg><span class="dot"></span><a href="tel:0800211927" class="phone-number-bt">0800 211 927</a><span class="dot"></span><a href="mailto:contact@forstudy.space" class="email">contact@forstudy.space</a>
+          </div>
+          </div>
+          <div class="mobile_footer">
+            <div class="container">
+              <div class="inform">
+                <div class="adres">Kyiv, Mechnikova str, 14/1</div>
+                <div class="on-map"><a href="#">On map</a></div>
+              </div>
+              <div class="inform-num">
+                <svg width="38" height="38">
+                  <use href="./css/sprite.svg#footerfb"></use>
+                </svg>
+                <a href="tel:0800211927" class="phone-number-bt">0800 211 927</a>
+                <a href="mailto:contact@forstudy.space" class="email">contact@forstudy.space</a>
+              </div>
+              <div class="llc">© 2021 HLEGAL Law company, LLC</div>
+            </div>
+          </div>
+      </footer>
+     <script src="./js/main.js"></script>
+    </body>
+    </html>
