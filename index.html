@@ -7,88 +7,80 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header__pc">
-        <div class="header__logo">
-            <img src="./img/Logo.png" alt="Logo">
-        </div>
-        <div class="header__contact">
-            <div class="header__contact__info">
-               <ul>
-                <li>УК</li>
-                <li>РУ</li>
-                <li>EN</li>
-               </ul>
-               <p>Kyiv, Mechnikova str, 14/1</p>
-               <a href="tel:0800211927" class="phone-number">0800 211 927</a>
-               <svg width="24" height="25">
-                <use href="./css/sprite.svg#facebook"></use>
-            </svg>
-            </div> 
-            <div class="header__contact__menu">
-                <nav class="header__contact__menu__main">
-                    <a href="#">Home</a>
-                    <a href="https://maynik.github.io/finish/publications.html">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-                </nav>
-                <div class="header__contact__menu__burger" id="burger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+    <section class="section1">
+        <div class="container">
+          <header>
+            <div class="header__pc">
+            <div class="header__logo">
+                <img src="./img/Logo.png" alt="Logo">
             </div>
-        </div>
-    </div>
-    <div class="header__mobile">
-        <div class="header__contact__info__mob">
-            <div class="header__contact__info__mob__lang">
-                <ul>
+            <div class="header__contact">
+                <div class="header__contact__info">
+                   <ul>
                     <li>УК</li>
                     <li>РУ</li>
                     <li>EN</li>
-                </ul>
-            </div>
-            <div class="header__contact__info__phone-number__mob">
-                <a href="tel:0800211927" class="phone-number">0800 211 927</a>
-            </div>
-        </div>
-        <div class="header__contact__menu__mob">
-            <div class="header__contact__logo__mob">
-                <img src="./img/Logo-mob.png" alt="Logo mob">
-            </div>
-            <div class="header__contact__menu">
-                <nav class="header__contact__menu__main__mob">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-                </nav>
-                <div class="header__contact__menu__burger__mob" id="burger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>         
-        </div>
-    </div>    
-    </header>
-    <section class="section1">
-        <div class="container">
-            <div class="flex-column">
-                <svg class="main-h" width="697px" height="799px">
-                    <use xlink:href="./css/sprite.svg#main-h"></use>
+                   </ul>
+                   <p>Kyiv, Mechnikova str, 14/1</p>
+                   <a href="tel:0800211927" class="phone-number">0800 211 927</a>
+                   <svg width="24" height="25">
+                    <use href="./css/sprite.svg#facebook"></use>
                 </svg>
+                </div> 
+                <div class="header__contact__menu">
+                    <nav class="header__contact__menu__main">
+                        <a href="#">Home</a>
+                        <a href="https://maynik.github.io/finish/publications.html">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__mobile">
+            <div class="header__contact__info__mob">
+                <div class="header__contact__info__mob__lang">
+                    <ul>
+                        <li>УК</li>
+                        <li>РУ</li>
+                        <li>EN</li>
+                    </ul>
+                </div>
+                <div class="header__contact__info__phone-number__mob">
+                    <a href="tel:0800211927" class="phone-number">0800 211 927</a>
+                </div>
+            </div>
+            <div class="header__contact__menu__mob">
+                <div class="header__contact__logo__mob">
+                    <img src="./img/Logo-mob.png" alt="Logo mob">
+                </div>
+                <div class="header__contact__menu">
+                    <nav class="header__contact__menu__main__mob">
+                      <button class="close-menu" id="close-menu">✖</button>
+                      <a href="#">Home</a>
+                      <a href="https://maynik.github.io/finish/publications.html">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Contact</a>
+                    </nav>
+                    <div class="header__contact__menu__burger__mob" id="burger-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>         
+            </div>
+        </div>    
+        </header>
+            <div class="flex-column">
+              <img class="main-h" src="./img/logo-h.png" alt="logo">
                 <h1 class="title">you legal solutions provider</h1>
-                <a href="#information">
-                    <svg class="link">
+                <a class="link" href="#information">
+                    <svg>
                         <use href="./css/sprite.svg#scroll"></use>
                     </svg>
                 </a>
@@ -226,6 +218,7 @@
                 </div>
             </div>
         </div>
+      </div>
       </section>  
       <section class="section5">
         <div class="container">
@@ -286,6 +279,7 @@
                   </div>
                 </div>
         </div>
+      </div>
       </section>
       <footer>
         <div class="container">
@@ -316,6 +310,8 @@
             </div>
           </div>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
      <script src="./js/main.js"></script>
 </body>
 </html>

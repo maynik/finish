@@ -1,12 +1,17 @@
-// Select the burger menu and the menu itself
 const burgerMenu = document.getElementById('burger-menu');
 const menu = document.querySelector('.header__contact__menu__main__mob');
+const closeMenuButton = document.getElementById('close-menu');
 
-// Add a click event listener to the burger menu
+// Відкриття меню при натисканні на бургер-меню
 burgerMenu.addEventListener('click', () => {
-    // Toggle the "active" class on the menu
-    menu.classList.toggle('active');
+  menu.classList.toggle('active');
 });
+
+// Закриття меню при натисканні на хрестик
+closeMenuButton.addEventListener('click', () => {
+  menu.classList.remove('active');
+});
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -55,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $(document).ready(function(){
   $('.slider').slick({
-      dots: true, // Показувати навігаційні точки
-      infinite: true, // Безкінечне прокручування
-      speed: 300,
+      dots: true, 
+      infinite: true,
+      speed: 3000,
       slidesToShow: 1,
       adaptiveHeight: true,
       arrows: false,
       autoplay: true, 
-      autoplaySpeed: 300, 
+      autoplaySpeed: 3000, 
   });
 });
 

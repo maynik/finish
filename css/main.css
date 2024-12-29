@@ -19,25 +19,28 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
-header {
+.section1 {
   position: relative;
+  min-height: 100vh;
+  background-color: var(--main-bg);
 }
-header .header__pc {
+.section1 header .header__pc {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-bg);
 }
-header .header__pc .header__logo {
+.section1 header .header__pc .header__logo {
   padding: 50px 0 0 60px;
 }
-header .header__pc .header__logo img {
+.section1 header .header__pc .header__logo img {
   max-width: 120px;
   height: auto;
 }
-header .header__pc .header__contact {
+.section1 header .header__pc .header__contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,11 +49,11 @@ header .header__pc .header__contact {
   gap: 16px;
   z-index: 1;
 }
-header .header__pc .header__contact .header__contact__info {
+.section1 header .header__pc .header__contact .header__contact__info {
   display: flex;
   align-items: center;
 }
-header .header__pc .header__contact .header__contact__info ul {
+.section1 header .header__pc .header__contact .header__contact__info ul {
   display: flex;
   list-style: none;
   font-family: "Montserrat", serif;
@@ -58,22 +61,22 @@ header .header__pc .header__contact .header__contact__info ul {
   font-size: 12px;
   margin: 0;
 }
-header .header__pc .header__contact .header__contact__info ul li {
+.section1 header .header__pc .header__contact .header__contact__info ul li {
   padding: 5px 7px;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-header .header__pc .header__contact .header__contact__info ul li:hover {
+.section1 header .header__pc .header__contact .header__contact__info ul li:hover {
   background-color: var(--accent);
 }
-header .header__pc .header__contact .header__contact__info p {
+.section1 header .header__pc .header__contact .header__contact__info p {
   font-family: "Montserrat", serif;
   font-weight: 400;
   font-size: 16px;
   margin: 0;
 }
-header .header__pc .header__contact .header__contact__info p::before, header .header__pc .header__contact .header__contact__info p::after {
+.section1 header .header__pc .header__contact .header__contact__info p::before, .section1 header .header__pc .header__contact .header__contact__info p::after {
   content: "";
   display: inline-block;
   width: 9px;
@@ -83,14 +86,14 @@ header .header__pc .header__contact .header__contact__info p::before, header .he
   margin: 0 8px;
   vertical-align: middle;
 }
-header .header__pc .header__contact .header__contact__info a.phone-number {
+.section1 header .header__pc .header__contact .header__contact__info a.phone-number {
   font-family: "Montserrat", serif;
   font-weight: 700;
   font-size: 16px;
   text-decoration: none;
   color: #fff;
 }
-header .header__pc .header__contact .header__contact__info a.phone-number::after {
+.section1 header .header__pc .header__contact .header__contact__info a.phone-number::after {
   content: "";
   display: inline-block;
   width: 9px;
@@ -100,39 +103,34 @@ header .header__pc .header__contact .header__contact__info a.phone-number::after
   margin: 0 8px;
   vertical-align: middle;
 }
-header .header__pc .header__contact .header__contact__menu__main {
+.section1 header .header__pc .header__contact .header__contact__menu__main {
   display: flex;
   gap: 15px;
 }
-header .header__pc .header__contact .header__contact__menu__main a {
+.section1 header .header__pc .header__contact .header__contact__menu__main a {
   text-decoration: none;
   color: #fff;
   font-family: "Montserrat", serif;
   font-weight: 700;
   font-size: 16px;
 }
-header .header__pc .header__contact .header__contact__menu__main a:hover {
+.section1 header .header__pc .header__contact .header__contact__menu__main a:hover {
   color: var(--accent);
   text-decoration: underline;
 }
-header .header__pc .header__contact .header__contact__menu__burger {
+.section1 header .header__pc .header__contact .header__contact__menu__burger {
   display: none;
   flex-direction: column;
   cursor: pointer;
 }
-header .header__pc .header__contact .header__contact__menu__burger div {
+.section1 header .header__pc .header__contact .header__contact__menu__burger div {
   width: 25px;
   height: 3px;
   background-color: #333;
   margin: 4px 0;
 }
-header .header__mobile {
+.section1 header .header__mobile {
   display: none;
-}
-
-.section1 {
-  min-height: 100vh;
-  background-color: var(--main-bg);
 }
 .section1 .container .flex-column {
   display: flex;
@@ -140,7 +138,7 @@ header .header__mobile {
   text-align: center;
   align-items: center;
 }
-.section1 .container .flex-column svg.main-h {
+.section1 .container .flex-column img.main-h {
   position: absolute;
   width: 100vh;
   top: 0;
@@ -156,21 +154,18 @@ header .header__mobile {
   font-weight: 700;
   font-size: 32px;
 }
-.section1 .container .flex-column .link {
+.section1 .container .flex-column a.link {
   position: absolute;
   bottom: 30px;
-  color: #fff;
-  width: 20px;
-  height: 11px;
-  left: 46%;
-  padding: 9px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+}
+.section1 .container .flex-column a.link svg {
+  width: 42px;
+  height: 42px;
 }
 
 .section2 {
   background-color: var(--main-bg);
-  padding: 0 180px;
+  padding: 60px 180px 0px 180px;
 }
 .section2 .container {
   display: flex;
@@ -559,10 +554,10 @@ footer .container .inform-num a.email {
 }
 
 @media (min-width: 1980px) {
-  header .header__pc .header__logo {
+  .section1 header .header__pc .header__logo {
     padding: 50px 0 0 160px;
   }
-  header .header__pc .header__contact {
+  .section1 header .header__pc .header__contact {
     padding: 50px 160px 0 0;
   }
   .section2 .container {
@@ -588,8 +583,9 @@ footer .container .inform-num a.email {
   section {
     margin-top: -1px;
   }
-  .section1 .container .flex-column svg.main-h {
+  .section1 .container .flex-column img.main-h {
     width: 100%;
+    object-fit: cover;
   }
   .section2 {
     padding: 0 60px;
@@ -617,27 +613,19 @@ footer .container .inform-num a.email {
 }
 @media (max-width: 768px) {
   .section1 {
-    min-height: 85vh;
+    min-height: 100vh;
   }
-  .section1 .container .flex-column .link {
-    bottom: 150px;
-    left: 40%;
-  }
-  .section1 .container .flex-column svg.main-h {
-    height: 100%;
-    top: -69px;
-  }
-  header .header__pc {
+  .section1 header .header__pc {
     display: none;
   }
-  header .header__mobile {
+  .section1 header .header__mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--main-bg);
     color: #fff;
   }
-  header .header__mobile .header__contact__info__mob {
+  .section1 header .header__mobile .header__contact__info__mob {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -645,24 +633,28 @@ footer .container .inform-num a.email {
     background: rgba(245, 245, 250, 0.2);
     z-index: 1;
   }
-  header .header__mobile .header__contact__info__mob .header__contact__info__mob__lang ul {
+  .section1 header .header__mobile .header__contact__info__mob .header__contact__info__mob__lang ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 10px 0 10px 15px;
   }
-  header .header__mobile .header__contact__info__mob .header__contact__info__mob__lang ul li {
+  .section1 header .header__mobile .header__contact__info__mob .header__contact__info__mob__lang ul li {
     font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 12px;
     cursor: pointer;
     padding: 5px 7px;
   }
-  header .header__mobile .header__contact__info__mob .header__contact__info__mob__lang ul li:hover {
+  .section1 header .header__mobile .header__contact__info__mob .header__contact__info__mob__lang ul li:hover {
     background: var(--accent);
     border-radius: 8px;
   }
-  header .header__mobile .header__contact__info__mob .header__contact__info__phone-number__mob a.phone-number {
+  .section1 header .header__mobile .section1 .container .flex-column .link {
+    bottom: 150px;
+    left: 40%;
+  }
+  .section1 header .header__mobile .header__contact__info__phone-number__mob a.phone-number {
     font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 16px;
@@ -670,72 +662,88 @@ footer .container .inform-num a.email {
     color: #fff;
     padding: 12.5px 15px 12.5px 0;
   }
-  header .header__mobile .header__contact__menu__mob {
+  .section1 header .header__contact__menu__mob {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: 10px;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__logo__mob img {
+  .section1 header .header__contact__menu__mob .header__contact__logo__mob img {
     max-width: 100px;
     height: auto;
     padding-left: 15px;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu {
+  .section1 header .header__contact__menu__mob .header__contact__menu {
     display: flex;
     align-items: center;
     padding-right: 15px;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__main__mob {
+  .section1 header .header__contact__menu__mob .header__contact__menu .close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    z-index: 1001; /* Вище за меню */
+  }
+  .section1 header .header__contact__menu__mob .header__contact__menu .close-menu:hover {
+    color: darkred;
+  }
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__main__mob {
     display: none;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__main__mob.active {
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__main__mob.active {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px;
-    right: 10px;
-    background-color: #de1010;
-    padding: 10px;
+    bottom: 10px;
+    border-radius: 12px 12px 0 0;
+    right: 0;
+    left: 0;
+    padding: 64px 12px 12px 12px;
+    background-color: rgb(255, 255, 255);
     gap: 10px;
     z-index: 1000;
-    width: 200px;
+    color: var(--active-active);
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__main__mob .active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    background-color: #de1010;
-    padding: 10px;
-    gap: 10px;
-    z-index: 1000;
-    width: 200px;
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__main__mob.active a {
+    text-align: center;
+    text-decoration: none;
+    max-width: 365px;
+    padding: 7px 112px;
+    background-color: rgb(245, 245, 250);
+    color: var(--active-active);
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob {
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__main__mob.active a:hover {
+    color: var(--accent);
+  }
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
     padding: 10px 7px;
+    z-index: 10;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob div {
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob div {
     width: 18px;
     height: 2px;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob.open div:first-child {
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob.open div:first-child {
     transform: rotate(45deg);
     position: relative;
     top: 8px;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob.open div:nth-child(2) {
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob.open div:nth-child(2) {
     opacity: 0;
   }
-  header .header__mobile .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob.open div:last-child {
+  .section1 header .header__contact__menu__mob .header__contact__menu .header__contact__menu__burger__mob.open div:last-child {
     transform: rotate(-45deg);
     position: relative;
     top: -8px;
@@ -788,6 +796,9 @@ footer .container .inform-num a.email {
   .section2 .container .tab-content p {
     font-size: 19px;
     margin: 0;
+  }
+  .section3 {
+    padding: 0 30px;
   }
   .section4 {
     padding: 60px;
@@ -848,19 +859,18 @@ footer .container .inform-num a.email {
     max-width: 648px;
   }
 }
-@media (max-width: 375px) {
-  .section1 .container .flex-column svg.main-h {
-    height: 100vh;
-    top: -118px;
-  }
+@media (max-width: 470px) {
   .section2 .container .scroll-wrapper {
     z-index: 1;
   }
   .section3 .container .block {
     padding: 0;
   }
+  .section4 {
+    padding: 30px;
+  }
   .section4 .slider .slide .img-slider img {
-    width: 315px;
+    width: 100%;
     height: 500px;
   }
   .section4 .slider .slide .content h3 {
@@ -876,9 +886,6 @@ footer .container .inform-num a.email {
   .section1 .container .flex-column .link {
     bottom: 250px;
     left: 40%;
-  }
-  .section1 {
-    min-height: 55vh;
   }
   .section2 {
     padding: 30px;

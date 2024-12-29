@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  position: relative;
+ 
   .header__pc {
     display: flex;
     justify-content: space-between;
@@ -134,6 +134,7 @@ header {
 }
 
         .section1{
+          position: relative;
             background: #f8f9fa;
             padding: 30px 60px;
             margin-top: 60px;
@@ -407,7 +408,21 @@ footer .container {
           display: flex;
           align-items: center;
           padding-right: 15px;
-
+          .close-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: red;
+            cursor: pointer;
+            z-index: 1001; /* Вище за меню */
+          }
+          
+          .close-menu:hover {
+            color: darkred;
+          }
           .header__contact__menu__main__mob {
             display: none;
           
@@ -415,29 +430,30 @@ footer .container {
               display: flex;
               flex-direction: column;
               position: absolute;
-              top: 50px;
-              right: 10px;
-              background-color: #de1010;
-              padding: 10px;
+              bottom: 10px;
+              border-radius: 12px 12px 0 0;
+              right: 0;
+              left: 0;
+              padding: 64px 12px 12px 12px;
+              background-color: rgba(255, 255, 255, 1);
               gap: 10px;
               z-index: 1000;
-              width: 200px;
+              color: var(--active-active);
+
+              a{
+                text-align: center;
+                text-decoration: none;
+                max-width: 365px;
+                padding: 7px 112px;
+                background-color: rgba(245, 245, 250, 1);
+                color: var(--active-active);
+
+                &:hover{
+                  color: var(--accent);
+                }
+              }
             }
           }
-
-          .header__contact__menu__main__mob .active{
-              display: flex;
-              flex-direction: column;
-              position: absolute;
-              top: 50px;
-              right: 10px;
-              background-color: #de1010;
-              padding: 10px;
-              gap: 10px;
-              z-index: 1000;
-              width: 200px;
-            }
-
 
  
           .header__contact__menu__burger__mob {
@@ -446,11 +462,12 @@ footer .container {
             cursor: pointer;
             gap: 5px;
             padding: 10px 7px;
+            z-index: 10;
 
             div {
               width: 18px;
               height: 2px;
-              background-color: var(--main-bg);
+              background-color: rgba(50, 50, 100, 1);
               transition: all 0.3s ease-in-out;
             }
 
@@ -472,12 +489,13 @@ footer .container {
           }
         }
       }
+      }
     }
   }
 footer .container {
   max-width: 648px;
 }
-}
+
 
 @media (max-width: 375px){
     .publication {
